@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - This is the starting point of the program
- * -Return: main function
+ * Return: main function
  */
 int main(void)
 
