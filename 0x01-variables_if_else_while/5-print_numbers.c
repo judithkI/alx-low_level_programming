@@ -15,7 +15,7 @@ int main(void)
 	}
 	printf("\n");
 
-	returnv (0);
+	return (0);
 
 }
 
