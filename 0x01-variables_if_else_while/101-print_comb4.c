@@ -1,45 +1,45 @@
 #include <studio.h>
 
 /**
- *  main - print triple combos
- *
- *  Description: print triple digit combos
- *
- *  Return: Always 0 (Success)
+ *  main - print all possible combos of 3 digits
+ *  Return: 0 Always
  */
-
 int main(void)
 {
+
 	int i, j, k;
 
-	i = 48;
-	j = 48;
-	k = 48;
-	while (i < 58)
+	for (i = 48; i < 58; i++)
 	{
-		j = i + 1;
-		while (j < 58)
+		for (j = i; j < 58; j++)
 		{
-			k = j + 1;
-			while (k < 58)
+			for (k = j; k < 58; k++)
 			{
+				if (i == j || j ==k || i ==k)
+				{
+					continue;
+				}
 				putchar(i);
 				putchar(j);
 				putchar(k);
-				if (i < 55 || j < 56 || k < 57)
-				{
-					putchar(44);
-					putchar(32);
 
+				if (i == 55 && j ==56 && k == 57)
+				{
+					break;
 				}
-				k++;
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			j++;
 		}
-		i++;
 	}
-	putchar(10);
-	return (0);
+	putchar('\n');
+	putchar(0);
 }
+
+
+
 
 
