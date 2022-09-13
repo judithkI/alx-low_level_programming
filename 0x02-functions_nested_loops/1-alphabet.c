@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet-using only _putchar followed by a new line
  *
- * Return: Always 0.
+ *
+ * Return: 0
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int letra;
+
+	for (letra = 'a'; letra <= 'z'; letra++)
+	{
+		_putchar(letra);
+	}
+	_putchar('\n');
 }
-
-
-
-
-
-
 
 
 
