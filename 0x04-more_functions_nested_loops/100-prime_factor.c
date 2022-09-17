@@ -16,17 +16,18 @@ int main(void)
 	{
 		if (number % inc == 0)
 		{
-	           number /= 2;
-		   continue;
+			number /= 2;
+			continue;
 		}
 
 		for (inc = 3; inc < number / 2; inc += 2)
 		{
 			if (number % inc == 0)
-		           number /= inc;
+		        	number /= inc;
 		}
 	}
-	printf("%Id\n", number);
+	printf("%1d\n", number);
 	return (0);
 }
+
 
