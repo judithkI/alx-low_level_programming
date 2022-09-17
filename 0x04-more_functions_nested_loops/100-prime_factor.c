@@ -26,7 +26,7 @@ int main(void)
 		           number /= inc;
 		}
 	}
-	printf("%1d\n", number);
+	printf("%Id\n", number);
 	return (0);
 }
 
