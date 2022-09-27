@@ -1,9 +1,7 @@
 #include "main.h"
 
-int _putchar(char c);
-
 /**
- * print_chessboard - prints the chessboard
+ * print_chessboard - print the chessboard, 2d array
  * @a: two dimension array to print
  * Return: void 
  */
