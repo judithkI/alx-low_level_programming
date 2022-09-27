@@ -6,7 +6,6 @@
  *
  * Return: Always 0.
  */
-void print_chessboard(char (*a)[8]);
 int main(void)
 {
     char board[8][8] = {
