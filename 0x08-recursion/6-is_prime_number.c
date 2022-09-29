@@ -1,8 +1,8 @@
 #include "main.h"
-int increse_divided(int n, int i);
+int increse_divide(int n, int i);
 
 /**
- * is_prime_number - function to return 1 if n is a prime number, otherwise return 0.
+ * is_prime_number - func to return 1 if n is a prime num, otherwise return 0.
  * @n: the number we are checking.
  * Return: returns an integer.
  */
