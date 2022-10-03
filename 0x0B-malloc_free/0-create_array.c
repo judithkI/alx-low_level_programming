@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * create_array - function that creates a string and initializes it.
- * @sizes: the number of elements
+ * @size: the number of elements
  * @c: the specific character
  * Return: a pointer to the memory location.
  */
