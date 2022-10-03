@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 #include <string.h>
 
 /**
-  * str_concat - a function that concatenate two strings.
+  * str_concat - a function to concatenate two strings.
   * @s1: the first string.
   * @s2: the second string.
   * Return: returns apointer to the concat
