@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * str_concat - function that concatenate two strings.
+  * str_concat -  function to concatenate two strings.
   * @s1: the first string.
   * @s2: the second string.
   * Return: returns apointer to the concat
