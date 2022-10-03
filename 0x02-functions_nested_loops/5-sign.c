@@ -5,8 +5,8 @@
   *
   * @n: is the int that will be used as the argument of the function
   * Return: 0 
-  *
-  **/
+  * 
+ **/
 
 int print_sign(int n)
 {
