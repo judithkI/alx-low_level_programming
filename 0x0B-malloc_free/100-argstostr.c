@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
-
 /**
 * argstostr - function that concatenates all the arguments of your program.
 * @ac:
