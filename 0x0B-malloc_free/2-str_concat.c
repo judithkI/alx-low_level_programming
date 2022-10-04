@@ -9,7 +9,6 @@
   * @s2: the second string
   * Return: returns pointer to the concat
   */
-
 char *str_concat(char *s1, char *s2)
 {
 	int i;
