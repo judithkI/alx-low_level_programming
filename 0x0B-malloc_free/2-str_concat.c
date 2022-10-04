@@ -5,8 +5,8 @@
 
 /**
   * str_concat - function to concatenate two strings.
-  * @s1: the first string.
-  * @s2: the second string.
+  * @s1: the first string
+  * @s2: the second string
   * Return: returns pointer to the concat
   */
 
