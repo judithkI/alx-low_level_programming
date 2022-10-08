@@ -5,7 +5,7 @@
 /**
 *_calloc - allocated memory for nmeb element of the size bytes
  * @nmemb: number of element in the array
- * @size: [2~bytes for each position in array
+ * @size: bytes for each position in array
 * Return : pointer void
 */
 
