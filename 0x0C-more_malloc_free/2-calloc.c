@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-*_calloc - allocated memory for nmeb element of the size bytes
+*_calloc - allocated memory for nmemb element of the size bytes
  * @nmemb: number of element in the array
  * @size: bytes for each position in array
 * Return : pointer void
