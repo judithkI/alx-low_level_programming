@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes, index;
-	int (address)(int, char **) = main;
+	int (address)(int, char *) = main;
 	unsigned char opcode;
 
 	if (argc != 2)
@@ -44,4 +44,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
