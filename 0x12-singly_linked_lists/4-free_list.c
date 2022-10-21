@@ -8,10 +8,8 @@
  */
 void free_list(list_t *head)
 {
-	list_t *move;
-	
+	list_t *move;	
 	move = head;
-	
 	while (move)
 	{
 		move = move->next;
@@ -19,3 +17,4 @@ void free_list(list_t *head)
 		head = move;
 	}
 }
+
