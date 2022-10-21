@@ -7,8 +7,9 @@
   * Return: returns nothing.
   */
 
-void print_first(void)
+void hare(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
 }
+
