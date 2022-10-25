@@ -1,23 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
-#include <string.h>
 /**
-* listint_len - function to return num of nodes of a list
-* @h: the location of the first node
-* Return: returns a size_t
-*/
+ * listint_len - returns the number of elements in a linked lists
+ * @h: pointer to the 1st node of the linked list
+ * Return: number of nodes
+ */
 size_t listint_len(const listint_t *h)
 {
-	const listint_t *move;
-	int a = 0;
+	size_t nodenum = 0;
 
-	move = h;
-	while (move != NULL)
+	while (h)
 	{
-		/printf("%d", move->n);/
-		move = move->next;
-		a++;
+		nodenum++;
+		h = h->next;
 	}
-	return (a);
+	return (nodenum);
 }
