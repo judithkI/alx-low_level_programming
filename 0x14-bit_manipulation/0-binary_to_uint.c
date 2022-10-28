@@ -1,56 +1,34 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
-unsigned int b_len(const char *b);
-unsigned int power(unsigned int num, unsigned int power);
+/**
+  * binary_to_uint - converts a binary number to an unsigned int
+  * @b: binary number
+  * Return: the converted number or 0 if it fails
+  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = b_len(b);
-	unsigned int a, i, c = 0;
+	unsigned int uint, place;
+	int n;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	for (i = 0; b[i] != '\0'; i++)
+	for (n = 0; b[n]; n++)
+		;
+	n--;
+	for (place = 1, uint = 0; n >= 0; n--)
 	{
-		if (b[i] != '0')
+		if (b[n] == '0')
 		{
-			if (b[i] != '1')
-			{
-				return (0);
-			}
+			place *= 2;
+			continue;
 		}
-
-		a = b[i] - '0';
-		c = c + power((a * 2), --len);
-
+		else if (b[n] == '1')
+		{
+			uint += place;
+			place *= 2;
+			continue;
+		}
+		return (0);
 	}
-	return (c);
-}
-
-unsigned int b_len(const char *b)
-{
-	unsigned int i, len = 0;
-
-	for (i = 0; b[i] != '\0'; i++)
-	{
-		len++;
-	}
-
-	return (len);
-}
-
-unsigned int power(unsigned int num, unsigned int power)
-{
-	unsigned int sum = 1;
-	unsigned int i;
-
-	if (power == 0)
-		return (1);
-	for (i = 0; i < power; i++)
-	{
-		sum = sum * num;
-	}
-	return (sum);
+	return (uint);
 }
